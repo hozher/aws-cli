@@ -10,7 +10,7 @@ docker build -t mesosphere/aws-cli .
 
 Automated build on Docker Hub
 
-[![DockerHub Badge](http://dockeri.co/image/mesosphere/aws-cli)](https://hub.docker.com/r/mesosphere/aws-cli/)
+[![DockerHub Badge](http://dockeri.co/image/hozher/aws-cli)](https://hub.docker.com/r/hozher/aws-cli/)
 
 ## Usage
 
@@ -42,10 +42,6 @@ alias aws='docker run --rm -t $(tty &>/dev/null && echo "-i") -e "AWS_ACCESS_KEY
 
 Or drop it into your path named `aws`:
 
-```
-curl -o /usr/local/bin/aws https://raw.githubusercontent.com/mesosphere/aws-cli/master/aws.sh && chmod a+x /usr/local/bin/aws
-```
-
 ## Maintenance 
 
 - The Docker image build & publish is automated by DockerHub for master commits and tags.
@@ -56,9 +52,12 @@ curl -o /usr/local/bin/aws https://raw.githubusercontent.com/mesosphere/aws-cli/
 AWS CLI Docs: https://aws.amazon.com/documentation/cli/
 
 
-# License
+## Credits
 
-Copyright 2016-2017 Mesosphere, Inc.
+This repo is a fork from: https://github.com/mesosphere/aws-cli
+
+
+# License
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this repository except in compliance with the License.
